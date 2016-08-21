@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+ <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <com.app.fancyday.RoundImageView
+                android:id="@+id/iv_portrait"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip"
+                android:src="@drawable/p1" />
+
+            <RelativeLayout
+              
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginTop="3dip"
+                    android:textColor="#000000"
+                    android:textSize="13dp"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/txt_signature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_name"
+                    android:layout_marginLeft="25dip"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:text="@string/signature" />
+
+                  <TextView
+                      android:id="@+id/txt_tv_date"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignParentTop="true"
+                      android:gravity="center_vertical|right"
+                      android:text="@string/tv_date"
+                      android:textColor="#FF0000"
+                      android:textSize="18dp" />
+
+</RelativeLayout>
+
+
+        </LinearLayout>
+                <RelativeLayout
+                    
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dip"
+            android:background="#f3ebeb" >
+        </RelativeLayout>
+
+</LinearLayout>

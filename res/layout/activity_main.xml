@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical"  
+    android:background="@drawable/bg4">  
+  
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+     >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/top_add"
+        android:layout_centerHorizontal="true"
+        android:text="Honeyday"
+        android:textColor="#262626"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/IB_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:background="@drawable/top_settings" />
+
+    <ImageButton
+        android:id="@+id/IB_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/top_add" />
+
+</RelativeLayout>
+        
+    
+   <LinearLayout  
+    android:layout_width="fill_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        >
+        
+         <TextView
+             android:id="@+id/tv_time"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center_horizontal"
+             android:textAlignment="center"
+             android:textColor="#FF0000"
+             android:textSize="40dp" />
+
+         </RelativeLayout> 
+        <!--  
+        <WebView 
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ffffff"/>
+            -->
+            
+            	
+       <!--  <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#00ffffff"
+            /> 
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:stackFromBottom="true"
+        android:background="#FFFFFF"/>
+      -->
+    
+      <ListView
+          android:id="@+id/listview"
+          android:layout_width="fill_parent"
+          android:layout_height="149dp"
+          android:layout_gravity="bottom|fill"
+          android:layout_weight="1"
+          android:background="#FFFFFF"
+          android:stackFromBottom="false" >
+
+    </ListView>
+  
+  
+  
+</LinearLayout> 
+        
+   
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/id_viewpage"  
+        android:layout_width="fill_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1" >  
+    </android.support.v4.view.ViewPager>  
+
+<LinearLayout 
+    android:layout_width="match_parent"  
+    android:layout_height="60dp"  
+     
+    android:orientation="horizontal" >  
+   
+    <LinearLayout  
+        android:id="@+id/id_tab_weixin"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" >  
+ <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->  
+        <ImageButton  
+             android:id="@+id/id_tab_weixin_img"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+            android:clickable="false"  
+             />  
+  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="纪念日"  
+          />  
+    </LinearLayout>  
+  
+    <LinearLayout  
+         android:id="@+id/id_tab_address"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" >  
+  
+        <ImageButton  
+             android:id="@+id/id_tab_address_img"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+             android:clickable="false"  
+             />  
+  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="消息"  
+          />  
+    </LinearLayout>  
+  
+    <LinearLayout  
+        android:id="@+id/id_tab_frd"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" >  
+  
+        <ImageButton  
+             android:id="@+id/id_tab_frd_img"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+             android:clickable="false"  
+             />  
+  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="发现"  
+   />  
+    </LinearLayout>  
+  
+    <LinearLayout  
+        android:id="@+id/id_tab_settings"  
+        android:layout_width="0dp"  
+        android:layout_height="match_parent"  
+        android:layout_weight="1"  
+        android:gravity="center"  
+        android:orientation="vertical" >  
+  
+        <ImageButton  
+             android:id="@+id/id_tab_settings_img"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:background="#00000000"  
+            android:clickable="false"  
+             />  
+  
+        <TextView  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text=""  
+            />  
+    </LinearLayout>  
+  
+</LinearLayout>  
+  
+</LinearLayout>  
